@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora PEN a ARS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      background: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Conversor PEN a ARS</h2>
+
+  <label for="pen">Monto en Soles (PEN):</label>
+  <input type="number" id="pen" placeholder="Ej: 500" step="0.01">
+
+  <label for="usd_pen">Precio del dólar en Perú:</label>
+  <input type="number" id="usd_pen" value="3.7" step="0.01">
+
+  <label for="usd_ars">Precio del dólar en Argentina:</label>
+  <input type="number" id="usd_ars" value="1300" step="0.01">
+
+  <button onclick="convertir()">Convertir</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function convertir() {
+      const pen = parseFloat(document.getElementById("pen").value);
+      const usd_pen = parseFloat(document.getElementById("usd_pen").value);
+      const usd_ars = parseFloat(document.getElementById("usd_ars").value);
+
+      if (isNaN(pen) || isNaN(usd_pen) || isNaN(usd_ars)) {
+        document.getElementById("resultado").innerText = "Por favor, completa todos los campos con valores válidos.";
+        return;
+      }
+
+      const usd = pen / usd_pen;
+      const ars = usd * usd_ars;
+
+      document.getElementById("resultado").innerHTML = `
+        <strong>Resultado:</strong><br>
+        USD: <b>$${usd.toFixed(2)}</b><br>
+        Pesos argentinos (ARS): <b>$${ars.toLocaleString()}</b>
+      `;
+    }
+  </script>
+
+</body>
+</html>
