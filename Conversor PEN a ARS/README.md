@@ -36,14 +36,13 @@ La interfaz es **responsiva** y se adapta automáticamente a dispositivos móvil
 
 ### 🔧 Opción 1: Localmente
 
-1. Descargá o cloná este repositorio:
-Abrí el archivo calculadora.html con cualquier navegador (Chrome, Firefox, Safari, etc).
+1. Descargá o cloná este repositorio
+2. Abrí el archivo calculadora.html con cualquier navegador (Chrome, Firefox, Safari, etc).
 
 ### 📲 Opción 2: En tu celular
 
-Enviá el archivo calculadora.html a tu celular (por WhatsApp, Bluetooth, Drive, etc).
-
-Abrilo desde el navegador de tu dispositivo.
+1. Enviá el archivo calculadora.html a tu celular (por WhatsApp, Bluetooth, Drive, etc).
+2. Abrilo desde el navegador de tu dispositivo.
 
 ¡Listo! Podés usar la calculadora sin conexión.
 
