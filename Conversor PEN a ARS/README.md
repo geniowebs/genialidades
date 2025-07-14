@@ -12,8 +12,10 @@ Esta calculadora realiza la siguiente conversión:
 2. Luego convierte esos dólares a pesos argentinos (ARS).
 
 ### Fórmulas utilizadas:
-USD = Monto_PEN / Precio_USD_en_Perú
+```
+USD = Monto_PEN / Precio_USD_en_Perú  
 ARS = USD * Precio_USD_en_Argentina
+```
 
 ---
 
@@ -45,10 +47,11 @@ La interfaz es **responsiva** y se adapta automáticamente a dispositivos móvil
 2. Abrilo desde el navegador de tu dispositivo.
 3.¡Listo! Podés usar la calculadora sin conexión.
  
+---
+
 ## ✏️ Personalización
 
-Podés modificar los valores por defecto de los inputs (value) o incluso conectarla a una API de tipo de cambio en tiempo real como:
+Podés modificar los valores por defecto de los inputs (`value`) o incluso conectarla a una **API de tipo de cambio en tiempo real** como:
 
-https://exchangerate.host
-
-https://open.er-api.com
+* [https://exchangerate.host](https://exchangerate.host)
+* [https://open.er-api.com](https://open.er-api.com)
