@@ -1,2 +1,2 @@
-# genialidades
-De todo un poco
+# Genialidades
+Aqui veras codigos geniales, de todo un poco!
