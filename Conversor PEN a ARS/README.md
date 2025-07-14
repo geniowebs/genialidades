@@ -43,10 +43,10 @@ La interfaz es **responsiva** y se adapta automáticamente a dispositivos móvil
 
 1. Enviá el archivo calculadora.html a tu celular (por WhatsApp, Bluetooth, Drive, etc).
 2. Abrilo desde el navegador de tu dispositivo.
+3.¡Listo! Podés usar la calculadora sin conexión.
+ 
+## ✏️ Personalización
 
-¡Listo! Podés usar la calculadora sin conexión.
-
-✏️ Personalización
 Podés modificar los valores por defecto de los inputs (value) o incluso conectarla a una API de tipo de cambio en tiempo real como:
 
 https://exchangerate.host
