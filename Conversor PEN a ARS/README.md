@@ -1,22 +1,54 @@
-# Conversor PEN a ARS
+# 💱 Calculadora de Conversión PEN a ARS
 
-Este archivo `calculadora.html` es una calculadora simple para convertir montos de Soles Peruanos (PEN) a Pesos Argentinos (ARS).
+Una calculadora simple y responsive desarrollada en **HTML + JavaScript**, que convierte **soles peruanos (PEN)** a **pesos argentinos (ARS)**, tomando como referencia el valor actual del dólar en cada país.
 
-## ¿Cómo funciona?
+---
 
-- El usuario ingresa una cantidad en Soles Peruanos (PEN).
-- La calculadora utiliza un tipo de cambio definido en el código para convertir el monto ingresado a Pesos Argentinos (ARS).
-- Al presionar el botón de conversión, se muestra el resultado en pantalla.
+## 🧮 ¿Cómo funciona?
 
-## Instrucciones de uso
+Esta calculadora realiza la siguiente conversión:
 
-1. Abre el archivo `calculadora.html` en tu navegador web.
-2. Ingresa la cantidad en Soles Peruanos que deseas convertir.
-3. Haz clic en el botón para realizar la conversión.
-4. El resultado aparecerá inmediatamente en la página.
+1. Convierte soles peruanos a dólares estadounidenses (USD).
+2. Luego convierte esos dólares a pesos argentinos (ARS).
 
-## Notas
+### Fórmulas utilizadas:
+USD = Monto_PEN / Precio_USD_en_Perú
+ARS = USD * Precio_USD_en_Argentina
 
-- El tipo de cambio puede estar fijo o ser editable, dependiendo de la implementación del archivo.
-- Esta herramienta es útil para obtener una conversión rápida entre estas dos monedas.
-- Si necesitas el valor actualizado del tipo de cambio, asegúrate de modificarlo en el archivo o consulta una fuente confiable.
+---
+
+## 📱 Vista en móvil
+
+La interfaz es **responsiva** y se adapta automáticamente a dispositivos móviles. No requiere servidor ni conexión a internet una vez cargada.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3 (estilo embebido)
+- JavaScript puro (sin frameworks)
+- 100% funcional desde navegador (no requiere backend)
+
+---
+
+## 🚀 Cómo usar
+
+### 🔧 Opción 1: Localmente
+
+1. Descargá o cloná este repositorio:
+Abrí el archivo calculadora.html con cualquier navegador (Chrome, Firefox, Safari, etc).
+
+📲 Opción 2: En tu celular
+Enviá el archivo calculadora.html a tu celular (por WhatsApp, Bluetooth, Drive, etc).
+
+Abrilo desde el navegador de tu dispositivo.
+
+¡Listo! Podés usar la calculadora sin conexión.
+
+✏️ Personalización
+Podés modificar los valores por defecto de los inputs (value) o incluso conectarla a una API de tipo de cambio en tiempo real como:
+
+https://exchangerate.host
+
+https://open.er-api.com
